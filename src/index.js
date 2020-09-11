@@ -1,6 +1,15 @@
 import React from 'react';
+import { render } from "react-dom"
+import {ThemeProvider} from 'styled-components'
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+export const BASE_URL = "https://swapi.dev/api/"
+
+// ReactDOM.render(<App />, document.getElementById('root'));
+
+render(
+    <App />,
+    document.querySelector('#root')
+)
