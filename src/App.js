@@ -11,14 +11,14 @@ const App = () => {
   // Fetch characters from the API in an effect hook. Remember, anytime you have a 
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
-  const [name, setName] = useState('')
-  const [gender, setGender] = useState('')
-  const [height, setHeight] = useState(null)
-  const [mass, setMass] = useState(null)
-  const [birthYear, setBirthYear] = useState(null)
-  const [eyeColor, setEyeColor] = useState('')
-  const [hairColor, setHairColor] = useState('')
-  const [skinColor, setSkinColor] = useState('')
+  // const [name, setName] = useState('')
+  // const [gender, setGender] = useState('')
+  // const [height, setHeight] = useState(null)
+  // const [mass, setMass] = useState(null)
+  // const [birthYear, setBirthYear] = useState(null)
+  // const [eyeColor, setEyeColor] = useState('')
+  // const [hairColor, setHairColor] = useState('')
+  // const [skinColor, setSkinColor] = useState('')
   const [characterList, setCharacterList] = useState([])
   
 
@@ -26,14 +26,14 @@ useEffect(() => {
   axios
   .get(`https://swapi.dev/api/people/`)
   .then((res) => {
-    setName(res.data.results.name)
-    setGender(res.data.results.gender)
-    setHeight(res.data.results.height)
-    setMass(res.data.results.mass)
-    setBirthYear(res.data.results.birth_year)
-    setEyeColor(res.data.results.eye_color)
-    setHairColor(res.data.results.hair_color)
-    setSkinColor(res.data.results.skin_color)
+    // setName(res.data.results.name)
+    // setGender(res.data.results.gender)
+    // setHeight(res.data.results.height)
+    // setMass(res.data.results.mass)
+    // setBirthYear(res.data.results.birth_year)
+    // setEyeColor(res.data.results.eye_color)
+    // setHairColor(res.data.results.hair_color)
+    // setSkinColor(res.data.results.skin_color)
     setCharacterList(res.data.results)
   })
   .catch(err => {

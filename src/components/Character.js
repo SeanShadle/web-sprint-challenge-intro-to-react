@@ -20,11 +20,14 @@ export default function CharacterCard(props){
 const CharacterDiv = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center;
     color:white;
-    background-color: black;
+    background: rgba(0,0,0, 0.5);
     width: 15vw;
+    margin-left: 42.5vw;
     `
 const Name = styled.h2`
+    color: #FFE81F;
 `
 const Height = styled.p``
 const Gender = styled.p``
