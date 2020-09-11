@@ -22,13 +22,20 @@ const CharacterDiv = styled.div`
     flex-direction: column;
     align-items: center;
     color:white;
-    background: rgba(0,0,0, 0.5);
+    background: rgba(0,0,0, 0.75);
     width: 15vw;
     margin-left: 42.5vw;
+    margin-bottom: 2rem;
+    border-radius: 15px;
     `
+
 const Name = styled.h2`
     color: #FFE81F;
+    &:hover{
+        color: #15f2fd;
+        transition: 1s;
 `
+
 const Height = styled.p``
 const Gender = styled.p``
 const Mass = styled.p``
@@ -36,6 +43,6 @@ const BirthYear = styled.p``
 const EyeColor = styled.p``
 const HairColor = styled.p``
 const SkinColor = styled.p`
-    border-bottom: 2px dashed white;
     padding-bottom: 2rem;
 `
+
